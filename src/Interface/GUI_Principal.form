@@ -78,12 +78,12 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField4" min="-2" pref="95" max="-2" attributes="0"/>
+                          <Component id="valorA" min="-2" pref="95" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField2" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                      <Component id="valorB" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="label3" min="-2" max="-2" attributes="0"/>
@@ -91,7 +91,7 @@
                   </Group>
                   <EmptySpace pref="11" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField3" min="-2" pref="95" max="-2" attributes="0"/>
+                      <Component id="valorC" min="-2" pref="95" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="label4" min="-2" max="-2" attributes="0"/>
@@ -103,11 +103,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="label5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField5" min="-2" pref="95" max="-2" attributes="0"/>
+                  <Component id="x1" min="-2" pref="95" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="label6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField1" min="-2" pref="95" max="-2" attributes="0"/>
+                  <Component id="x2" min="-2" pref="95" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -117,9 +117,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField2" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                      <Component id="jTextField3" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                      <Component id="jTextField4" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="valorB" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="valorC" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="valorA" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
@@ -131,8 +131,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jTextField5" alignment="0" min="-2" pref="44" max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="x1" alignment="0" min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="x2" min="-2" pref="44" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -150,11 +150,17 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="x2">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="valorB">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="valorBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="valorC">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="valorCActionPerformed"/>
+          </Events>
         </Component>
         <Component class="java.awt.Label" name="label2">
           <Properties>
@@ -180,9 +186,15 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="valorC"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="valorA">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="valorAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JTextField" name="x1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="x1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="java.awt.Label" name="label5">
           <Properties>
